@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="a143535a-ec54-49f1-9d41-da9dc4ca2761" SharePointProductVersion="16.0">
+  <FeatureManifests>
+    <FeatureManifest Location="Inventur_InventurListeITKomponenten\Feature.xml" />
+    <FeatureManifest Location="Inventur_InventurListeGMKomponenten\Feature.xml" />
+    <FeatureManifest Location="Inventur_InventurListeLeitungenKomponenten\Feature.xml" />
+  </FeatureManifests>
+</Solution>

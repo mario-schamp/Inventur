@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{754456b4-85b3-43ab-ac73-81df15740a11}"
+       Name="Versicherung"
+	   Title="Versicherung"
+       DisplayName="Versicherung"
+       Type="Attachments"
+       Required="FALSE"
+       Group="IT Abteilung"
+	   Description="Unter welcher Versicherung läuft das Gerät?"
+	   JSLink="~site/scripts/rendering.js">
+	  <Default>Keine vorhanden</Default>
+  </Field>
+</Elements>

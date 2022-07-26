@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{6a487ae4-3dad-456d-81b0-3aee366f95d9}"
+       Name="Stuhl4"
+	   Title="Stuhl4"
+       DisplayName="Stuhl 4"
+       Type="Number"
+       Required="FALSE"
+       Group="GM Abteilung"
+	   Aggregation="sum"
+	   Sortable="FALSE"
+	   Description="38cm Höhe">
+	  <Default>0</Default>
+  </Field>
+</Elements>

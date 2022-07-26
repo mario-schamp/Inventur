@@ -1,0 +1,5 @@
+C:\Users\adm_m.schamp\source\repos\Inventur\Inventur\bin\Debug\Inventur.pdb
+C:\Users\adm_m.schamp\source\repos\Inventur\Inventur\obj\Debug\Inventur.csproj.AssemblyReference.cache
+C:\Users\adm_m.schamp\source\repos\Inventur\Inventur\obj\Debug\Inventur.csproj.CoreCompileInputs.cache
+C:\Users\adm_m.schamp\source\repos\Inventur\Inventur\obj\Debug\Inventur.dll
+C:\Users\adm_m.schamp\source\repos\Inventur\Inventur\obj\Debug\Inventur.pdb

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{962c1159-3a4f-49a4-b648-c486b438b92e}"
+       Name="Bilder"
+	   Title="Bilder"
+       DisplayName="Bilder"
+       Type="Image"
+       Required="FALSE"
+       Group="IT Abteilung">
+  </Field>
+</Elements>

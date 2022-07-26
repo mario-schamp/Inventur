@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{08597474-d94b-469d-ac27-2f5196cf8fc6}"
+       Name="Einzeltisch5"
+	   Title="Einzeltisch5"
+       DisplayName="Einzeltisch 5"
+       Type="Number"
+       Required="FALSE"
+       Group="GM Abteilung"
+	   Aggregation="sum"
+	   Sortable="FALSE"
+	   Description="71cm hoher Einzeltisch">
+	  <Default>0</Default>
+  </Field>
+</Elements>

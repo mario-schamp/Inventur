@@ -1,0 +1,39 @@
+﻿#sideNavBox {
+    float: left;
+    margin-left: 0px;
+    margin-right: 20px;
+    width: 210px;
+    border: 1px solid silver;
+    background-color: rgba(239,239,239,0.78);
+}
+
+table.ms-formtable tr:nth-child(even) {
+    background: #d3d3d3;
+}
+
+table.ms-formtable tr:nth-child(odd) {
+    background: #e1eaf4;
+}
+
+table td.ms-formlabel, td.ms-formbody {
+    font-weight: bold
+}
+
+table td .ms-standardheader {
+    font-weight: bold
+}
+/* List View Header */
+.ms-listviewtable > thead > tr > th {
+    background-color: #5B9BD5;
+}
+
+/* List view Header Text color*/
+.ms-vh-div, .ms-headerSortTitleLink {
+    color: white !important;
+    font-weight: bold;
+}
+
+/* background color for alternate rows */
+.ms-listviewtable > tbody > tr.ms-alternating {
+    background: #DDEBF7
+}

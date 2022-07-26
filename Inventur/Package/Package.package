@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a143535a-ec54-49f1-9d41-da9dc4ca2761" solutionId="a143535a-ec54-49f1-9d41-da9dc4ca2761" resetWebServer="false" sharePointProductVersion="16.0" name="Inventur" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="f25ffb51-4866-46f7-8f3a-7ae782526054" />
+    <featureReference itemId="8078a838-79a9-4f56-8135-d653297fac66" />
+    <featureReference itemId="e3856f83-b677-44ad-8052-68adc361c518" />
+  </features>
+</package>

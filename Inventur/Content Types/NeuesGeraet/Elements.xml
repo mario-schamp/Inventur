@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Element (0x01) -->
+  <ContentType ID="0x0100F45D0A2A3FDA45CEABB5AB7D5AD2995B" Name="NeuesGeraet" Group="IT Abteilung" Description="Geräte der IT Abteilung" Inherits="FALSE" Version="0">
+    <FieldRefs>
+	  <FieldRef ID="{b2837cae-542a-4ffb-bf6b-f5f0375f6d0b}" DisplayName="Interne ID" Required="TRUE" Name="InterneID" />
+	  <FieldRef ID="{719c176f-4076-40a4-aa1b-bc5d2330b4d2}" DisplayName="Bezeichnung" Required="TRUE" Name="Bezeichnung" />
+      <FieldRef ID="{489e018b-9903-461c-a9de-ccfd0e02e33f}" DisplayName="Benutzer" Required="FALSE" Name="Benutzer" />
+      <FieldRef ID="{94d56877-f257-417e-9578-236efc1f9a0b}" DisplayName="Standort" Required="FALSE" Name="Standort" />
+      <FieldRef ID="{962c1159-3a4f-49a4-b648-c486b438b92e}" DisplayName="Bilder" Required="FALSE" Name="Bilder" />
+      <FieldRef ID="{35877483-8fef-488e-8488-47b217081640}" DisplayName="DATEV" Required="FALSE" Name="DATEV" />
+      <FieldRef ID="{e097e3c9-3387-4361-9832-b2f81d6e358b}" DisplayName="Geräte Prüfung" Required="FALSE" Name="GeraetePruefung" />
+      <FieldRef ID="{731b72c1-52f1-4623-98ce-78b553434b7f}" DisplayName="Kaufdatum" Required="FALSE" Name="Kaufdatum"  />
+	  <FieldRef ID="{d33813fe-3745-48c9-a743-4a01cf8e2dd4}" DisplayName="Garantie" Required="FALSE" Name="Garantie" />
+      <FieldRef ID="{9fa249b6-fbbd-4872-bce5-28a8b4537f26}" DisplayName="Notizen" Required="FALSE" Name="Notizen" ShowInEditForm="TRUE" />
+      <FieldRef ID="{7714c294-138f-4a69-ba58-217c9d8a1f3d}" DisplayName="Modell" Required="FALSE" Name="Modell" />
+      <FieldRef ID="{67b82a54-b214-402d-bfc0-01a530ece2b0}" DisplayName="Rechnung" Required="FALSE" Name="Rechnung" />
+      <FieldRef ID="{3707ef58-5838-4a08-bc7e-4312423b3f84}" DisplayName="Seriennummer" Required="FALSE" Name="Seriennummer" />
+	  <FieldRef ID="{edfa9a03-e93a-4841-ab40-727050b52100}" DisplayName="Toner" Required="FALSE" Name="Toner" />
+      <FieldRef ID="{754456b4-85b3-43ab-ac73-81df15740a11}" DisplayName="Versicherung" Required="FALSE" Name="Versicherung" />
+      <FieldRef ID="{724ec975-4432-438e-9506-95f3a5a7ebb2}" DisplayName="Vertrag" Required="FALSE" Name="Vertrag" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

@@ -1,0 +1,305 @@
+﻿<Project ToolsVersion="17.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9BA1926-0449-4530-BC74-B3CA8747DC69}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inventur</RootNamespace>
+    <AssemblyName>Inventur</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.1</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>12.2</MinimumOfficeToolsVersion>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{fd1a2688-48ff-400f-acb7-c9ae12efe497}</AppFeaturePartId>
+    <WspPartId>{a5ce73f7-87a5-4252-a6f4-665472ef7f8b}</WspPartId>
+    <WorkflowPartId>{1a15438f-b8a8-4084-8f0b-18f348eb9fee}</WorkflowPartId>
+    <CspkgPartId>{63f39c3c-65b5-45a4-b2b4-1c33a3bfc158}</CspkgPartId>
+    <SqlPackagePartId>{c6117b54-29e5-457d-b467-5101f71e0b68}</SqlPackagePartId>
+    <ActiveDeploymentConfiguration>Deploy SharePoint Add-in</ActiveDeploymentConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Content Types\GebaeudeManagement\Elements.xml" />
+    <Content Include="Content Types\NeueLeitung\Elements.xml" />
+    <Content Include="Content Types\NeuesGeraet\Elements.xml" />
+    <Content Include="Features\InventurListeLeitungenKomponenten\InventurListeLeitungenKomponenten.Template.xml">
+      <DependentUpon>InventurListeLeitungenKomponenten.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\InventurListeGMKomponenten\InventurListeGMKomponenten.Template.xml">
+      <DependentUpon>InventurListeGMKomponenten.feature</DependentUpon>
+    </Content>
+    <Content Include="Librarys\DokumentenAblage\DokumentenAblageInstance\Elements.xml" />
+    <Content Include="Librarys\DokumentenAblage\EditDlg.htm" />
+    <Content Include="Librarys\DokumentenAblage\Elements.xml" />
+    <Content Include="Librarys\DokumentenAblage\FileDlg.htm" />
+    <Content Include="Librarys\DokumentenAblage\Repair.aspx" />
+    <Content Include="Librarys\DokumentenAblage\Schema.xml" />
+    <Content Include="Librarys\DokumentenAblage\Upload.aspx" />
+    <Content Include="Lists\InventurListeGM\Elements.xml" />
+    <Content Include="Lists\InventurListeGM\GMInventurListe\Elements.xml" />
+    <Content Include="Lists\InventurListeGM\Schema.xml" />
+    <Content Include="Lists\InventurListeIT\Elements.xml" />
+    <Content Include="Lists\InventurListeIT\ITInventurListe\Elements.xml" />
+    <Content Include="Lists\InventurListeIT\Schema.xml" />
+    <Content Include="Lists\ITLeitungen\Elements.xml" />
+    <Content Include="Lists\ITLeitungen\ITLeitungenInstance\Elements.xml" />
+    <Content Include="Lists\ITLeitungen\Schema.xml" />
+    <Content Include="Pages\hr.aspx" />
+    <Content Include="Pages\it.aspx" />
+    <Content Include="Scripts\jquery-3.6.0.intellisense.js" />
+    <Content Include="Scripts\jquery-3.6.0.js" />
+    <Content Include="Scripts\jquery-3.6.0.min.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
+    <Content Include="Scripts\rendering.js" />
+    <Content Include="Site Columns\Benutzer\Elements.xml" />
+    <Content Include="Site Columns\Bezeichnung\Elements.xml" />
+    <Content Include="Site Columns\Bilder\Elements.xml" />
+    <Content Include="Site Columns\DATEV\Elements.xml" />
+    <Content Include="Site Columns\Doppeltisch4\Elements.xml" />
+    <Content Include="Site Columns\Doppeltisch3\Elements.xml" />
+    <Content Include="Site Columns\Doppeltisch5\Elements.xml" />
+    <Content Include="Site Columns\Doppeltisch6\Elements.xml" />
+    <Content Include="Site Columns\Doppeltisch7\Elements.xml" />
+    <Content Include="Site Columns\Einzeltisch3\Elements.xml" />
+    <Content Include="Site Columns\Einzeltisch4\Elements.xml" />
+    <Content Include="Site Columns\Einzeltisch5\Elements.xml" />
+    <Content Include="Site Columns\Einzeltisch6\Elements.xml" />
+    <Content Include="Site Columns\Einzeltisch7\Elements.xml" />
+    <Content Include="Site Columns\Garantie\Elements.xml" />
+    <Content Include="Site Columns\GeraetePruefung\Elements.xml" />
+    <Content Include="Site Columns\InterneID\Elements.xml" />
+    <Content Include="Site Columns\Kaufdatum\Elements.xml" />
+    <Content Include="Site Columns\Notizen\Elements.xml" />
+    <Content Include="Site Columns\Modell\Elements.xml" />
+    <Content Include="Site Columns\Raumnummer\Elements.xml" />
+    <Content Include="Site Columns\Rechnung\Elements.xml" />
+    <Content Include="Site Columns\Seriennummer\Elements.xml" />
+    <Content Include="Site Columns\Standort\Elements.xml" />
+    <Content Include="Site Columns\Stuhl3\Elements.xml" />
+    <Content Include="Site Columns\Stuhl4\Elements.xml" />
+    <Content Include="Site Columns\Stuhl5\Elements.xml" />
+    <Content Include="Site Columns\Stuhl6\Elements.xml" />
+    <Content Include="Site Columns\Stuhl7\Elements.xml" />
+    <Content Include="Site Columns\Toner\Elements.xml" />
+    <Content Include="Site Columns\Versicherung\Elements.xml" />
+    <Content Include="Site Columns\Vertrag\Elements.xml" />
+    <None Include="Content Types\GebaeudeManagement\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c2707d39-efea-4e6d-8239-430d5fd4cf08}</SharePointProjectItemId>
+    </None>
+    <None Include="Content Types\NeueLeitung\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6a3fbc96-fc57-4f66-b01c-36210517a317}</SharePointProjectItemId>
+    </None>
+    <None Include="Content Types\NeuesGeraet\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{aefbcc21-206c-4298-b7fb-2581be7d4762}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\InventurListeLeitungenKomponenten\InventurListeLeitungenKomponenten.feature">
+      <FeatureId>{e3856f83-b677-44ad-8052-68adc361c518}</FeatureId>
+    </None>
+    <None Include="Features\InventurListeGMKomponenten\InventurListeGMKomponenten.feature">
+      <FeatureId>{8078a838-79a9-4f56-8135-d653297fac66}</FeatureId>
+    </None>
+    <None Include="Librarys\DokumentenAblage\DokumentenAblageInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7c05e330-fb19-4ab3-9999-42bd70ee5d85}</SharePointProjectItemId>
+    </None>
+    <None Include="Librarys\DokumentenAblage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3b840024-94e5-417f-a818-2ef344cf5e06}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\InventurListeGM\GMInventurListe\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c08fc65d-d61b-452c-b60e-4d682ce4e2be}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\InventurListeGM\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{08d09839-e3f1-4e0e-950f-e499533c203e}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\InventurListeIT\ITInventurListe\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e0678d45-1359-4d80-9a8a-75a4739a1e43}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\InventurListeIT\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e059bd41-6404-4d05-b394-187b997ac70c}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\ITLeitungen\ITLeitungenInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b82f8637-ea3c-4e1f-9017-cccd97887c91}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\ITLeitungen\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{97f7d62e-72d5-45e2-ab65-66993f188da0}</SharePointProjectItemId>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{898603a3-3598-4660-9911-ed78de1dd11a}</SharePointProjectItemId>
+    </None>
+    <Content Include="Pages\Elements.xml" />
+    <Content Include="Pages\Default.aspx" />
+    <None Include="Site Columns\Benutzer\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{68b9c464-a775-42f9-b6bc-5a318e88bcfc}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Bezeichnung\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6953217c-eaa1-4216-9b84-a0efe1c88749}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Bilder\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4af45d2a-c0e9-4fa2-873f-b6fb7fea82da}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\DATEV\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a10e8cd6-99e0-404d-a506-777d4d186409}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Doppeltisch4\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{77f770df-36ba-436e-ae47-00afdfac0691}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Doppeltisch3\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e4d6157c-a2db-459e-ab51-863317329371}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Doppeltisch5\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{da349c98-7eba-47f4-98c3-56a313441e67}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Doppeltisch6\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bae119a2-acd2-4009-abbb-bfa0cb56cc25}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Doppeltisch7\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3447265e-d3ae-4172-aa67-e9e207bd2438}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Einzeltisch3\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a0918706-dc46-4eb1-b126-81fa15653499}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Einzeltisch4\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e063969a-6f49-4f32-8fec-a5d006de9de5}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Einzeltisch5\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{198842ce-2bd5-4951-8d71-d009a8b95f7f}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Einzeltisch6\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b18f3ed2-14ff-4a71-a252-cd4244dc1e2c}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Einzeltisch7\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f5544ae9-90c8-49b6-baf1-283a1fc41c2a}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Garantie\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3d9fa766-fa9d-4ad1-bea5-7a5a64dc920c}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\GeraetePruefung\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6576a1e9-d4eb-46e9-9389-5263a3f923c1}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\InterneID\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f72b910b-ff66-4abc-bc12-bf7633c14a0f}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Kaufdatum\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d8bba8e9-52a3-4d53-a756-46016f4bb10d}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Notizen\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f71e515f-1da3-4323-b16a-9c16446396e0}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Modell\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9624b382-50c3-4b0b-8e5d-dc4e4ee3729d}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Raumnummer\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{31543f39-6211-41f6-8ee8-13025461dfdf}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Rechnung\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c5fd57a0-1178-4146-83b0-917943d09ac4}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Seriennummer\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bbf749e5-51e7-4d9a-85f1-698433b62316}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Standort\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{461828d7-1ff3-4f6c-8a64-c8c9b0529df9}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Stuhl3\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a042fce8-e52f-4ae5-88d1-bc2a03121977}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Stuhl4\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3719c9c0-8ad6-4f67-92e8-edb90e233e2c}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Stuhl5\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{28d81ef0-a226-4c17-9a5e-8d5e4b465302}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Stuhl6\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9ca3d346-9d76-4d0f-972f-f7311a439a62}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Stuhl7\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dbdd9b91-551f-48e0-8dd6-4008a118af98}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Toner\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0ef107f9-899a-40b8-a424-cc2ad28f0239}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Versicherung\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{97cf914e-1589-49ff-bfec-c3e7bd2e1af7}</SharePointProjectItemId>
+    </None>
+    <None Include="Site Columns\Vertrag\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a74afe35-e278-44fb-95b5-39da80816af5}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\jquery-3.6.0.min.map" />
+    <None Include="Scripts\jquery-3.6.0.slim.min.map" />
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c6117b54-29e5-457d-b467-5101f71e0b68}</SharePointProjectItemId>
+    </None>
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\App.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7c7291d7-8574-4dfe-9398-76ab6436520e}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\Elements.xml" />
+    <Content Include="Content\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Images\Elements.xml" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{901c05db-373e-4cad-9d80-b94403924969}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{a143535a-ec54-49f1-9d41-da9dc4ca2761}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\InventurListeITKomponenten\InventurListeITKomponenten.feature">
+      <FeatureId>{f25ffb51-4866-46f7-8f3a-7ae782526054}</FeatureId>
+    </None>
+    <None Include="Features\InventurListeITKomponenten\InventurListeITKomponenten.Template.xml">
+      <DependentUpon>InventurListeITKomponenten.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ProjectExtensions />
+</Project>

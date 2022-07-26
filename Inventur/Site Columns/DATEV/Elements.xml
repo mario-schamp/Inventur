@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{35877483-8fef-488e-8488-47b217081640}"
+       Name="DATEV"
+	   Title="DATEV"
+       DisplayName="DATEV"
+       Type="DateTime"
+       Required="FALSE"
+	   Format="DateOnly"
+       Group="IT Abteilung"
+	   JSLink="~site/scripts/rendering.js"
+	   Description="Ab wann kann das Gerät abgeschrieben werden?">
+	  <Default>Nicht gelistet</Default>
+  </Field>
+</Elements>

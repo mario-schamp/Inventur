@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="Liste und weitere Komponenten zur Inventarisierung des Christburg Campus gGmbH" Id="f25ffb51-4866-46f7-8f3a-7ae782526054" Scope="Web" Title="Inventur Liste IT Komponenten" Version="1.0.0.1">
+  <ElementManifests>
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Default.aspx" />
+    <ElementFile Location="Pages\it.aspx" />
+    <ElementFile Location="Pages\hr.aspx" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\App.js" />
+    <ElementFile Location="Scripts\jquery-3.6.0.slim.min.map" />
+    <ElementFile Location="Scripts\jquery-3.6.0.slim.min.js" />
+    <ElementFile Location="Scripts\jquery-3.6.0.slim.js" />
+    <ElementFile Location="Scripts\jquery-3.6.0.min.map" />
+    <ElementFile Location="Scripts\jquery-3.6.0.min.js" />
+    <ElementFile Location="Scripts\jquery-3.6.0.js" />
+    <ElementFile Location="Scripts\jquery-3.6.0.intellisense.js" />
+    <ElementFile Location="Scripts\rendering.js" />
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Content\App.css" />
+    <ElementManifest Location="Images\Elements.xml" />
+    <ElementFile Location="Images\AppIcon.png" />
+    <ElementManifest Location="ITInventurListe\Elements.xml" />
+    <ElementManifest Location="InventurListeIT\Elements.xml" />
+    <ElementFile Location="InventurListeIT\Schema.xml" />
+    <ElementManifest Location="Benutzer\Elements.xml" />
+    <ElementManifest Location="Standort\Elements.xml" />
+    <ElementManifest Location="NeuesGeraet\Elements.xml" />
+    <ElementManifest Location="InterneID\Elements.xml" />
+    <ElementManifest Location="Bilder\Elements.xml" />
+    <ElementManifest Location="DATEV\Elements.xml" />
+    <ElementManifest Location="GeraetePruefung\Elements.xml" />
+    <ElementManifest Location="Kaufdatum\Elements.xml" />
+    <ElementManifest Location="Notizen\Elements.xml" />
+    <ElementManifest Location="Modell\Elements.xml" />
+    <ElementManifest Location="Rechnung\Elements.xml" />
+    <ElementManifest Location="Seriennummer\Elements.xml" />
+    <ElementManifest Location="Toner\Elements.xml" />
+    <ElementManifest Location="Versicherung\Elements.xml" />
+    <ElementManifest Location="Vertrag\Elements.xml" />
+    <ElementManifest Location="Bezeichnung\Elements.xml" />
+    <ElementManifest Location="Garantie\Elements.xml" />
+    <ElementManifest Location="DokumentenAblageInstance\Elements.xml" />
+    <ElementManifest Location="DokumentenAblage\Elements.xml" />
+    <ElementFile Location="DokumentenAblage\Schema.xml" />
+    <ElementFile Location="DokumentenAblage\EditDlg.htm" />
+    <ElementFile Location="DokumentenAblage\FileDlg.htm" />
+    <ElementFile Location="DokumentenAblage\Repair.aspx" />
+    <ElementFile Location="DokumentenAblage\Upload.aspx" />
+    <ElementManifest Location="GebaeudeManagement\Elements.xml" />
+    <ElementManifest Location="Raumnummer\Elements.xml" />
+    <ElementManifest Location="Stuhl3\Elements.xml" />
+    <ElementManifest Location="Stuhl4\Elements.xml" />
+    <ElementManifest Location="Stuhl5\Elements.xml" />
+    <ElementManifest Location="Stuhl6\Elements.xml" />
+    <ElementManifest Location="Stuhl7\Elements.xml" />
+    <ElementManifest Location="Doppeltisch3\Elements.xml" />
+    <ElementManifest Location="Doppeltisch4\Elements.xml" />
+    <ElementManifest Location="Doppeltisch5\Elements.xml" />
+    <ElementManifest Location="Doppeltisch6\Elements.xml" />
+    <ElementManifest Location="Doppeltisch7\Elements.xml" />
+    <ElementManifest Location="Einzeltisch3\Elements.xml" />
+    <ElementManifest Location="Einzeltisch4\Elements.xml" />
+    <ElementManifest Location="Einzeltisch5\Elements.xml" />
+    <ElementManifest Location="Einzeltisch6\Elements.xml" />
+    <ElementManifest Location="Einzeltisch7\Elements.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="Pages\Elements.xml" />
+        <ElementManifest Location="Scripts\Elements.xml" />
+        <ElementManifest Location="Content\Elements.xml" />
+        <ElementManifest Location="Images\Elements.xml" />
+        <ElementManifest Location="ITInventurListe\Elements.xml" />
+        <ElementManifest Location="InventurListeIT\Elements.xml" />
+        <ElementManifest Location="Benutzer\Elements.xml" />
+        <ElementManifest Location="Standort\Elements.xml" />
+        <ElementManifest Location="NeuesGeraet\Elements.xml" />
+        <ElementManifest Location="InterneID\Elements.xml" />
+        <ElementManifest Location="Bilder\Elements.xml" />
+        <ElementManifest Location="DATEV\Elements.xml" />
+        <ElementManifest Location="GeraetePruefung\Elements.xml" />
+        <ElementManifest Location="Kaufdatum\Elements.xml" />
+        <ElementManifest Location="Notizen\Elements.xml" />
+        <ElementManifest Location="Modell\Elements.xml" />
+        <ElementManifest Location="Rechnung\Elements.xml" />
+        <ElementManifest Location="Seriennummer\Elements.xml" />
+        <ElementManifest Location="Toner\Elements.xml" />
+        <ElementManifest Location="Versicherung\Elements.xml" />
+        <ElementManifest Location="Vertrag\Elements.xml" />
+        <ElementManifest Location="Bezeichnung\Elements.xml" />
+        <ElementManifest Location="Garantie\Elements.xml" />
+        <ElementManifest Location="DokumentenAblageInstance\Elements.xml" />
+        <ElementManifest Location="DokumentenAblage\Elements.xml" />
+        <ElementManifest Location="GebaeudeManagement\Elements.xml" />
+        <ElementManifest Location="Raumnummer\Elements.xml" />
+        <ElementManifest Location="Stuhl3\Elements.xml" />
+        <ElementManifest Location="Stuhl4\Elements.xml" />
+        <ElementManifest Location="Stuhl5\Elements.xml" />
+        <ElementManifest Location="Stuhl6\Elements.xml" />
+        <ElementManifest Location="Stuhl7\Elements.xml" />
+        <ElementManifest Location="Doppeltisch3\Elements.xml" />
+        <ElementManifest Location="Doppeltisch4\Elements.xml" />
+        <ElementManifest Location="Doppeltisch5\Elements.xml" />
+        <ElementManifest Location="Doppeltisch6\Elements.xml" />
+        <ElementManifest Location="Doppeltisch7\Elements.xml" />
+        <ElementManifest Location="Einzeltisch3\Elements.xml" />
+        <ElementManifest Location="Einzeltisch4\Elements.xml" />
+        <ElementManifest Location="Einzeltisch5\Elements.xml" />
+        <ElementManifest Location="Einzeltisch6\Elements.xml" />
+        <ElementManifest Location="Einzeltisch7\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

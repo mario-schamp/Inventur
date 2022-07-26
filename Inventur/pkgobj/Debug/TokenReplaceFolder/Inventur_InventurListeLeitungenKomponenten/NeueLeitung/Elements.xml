@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Element (0x01) -->
+  <ContentType ID="0x01005665452AD62E4BBAB66C997909C1379D" Name="NeueLeitung" Group="IT Abteilung" Description="Übersicht aller Leitungen" Inherits="FALSE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{7714c294-138f-4a69-ba58-217c9d8a1f3d}" Name="Modell" DisplayName="Modell" Required="FALSE" Description="Hersteller + Modelltyp" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

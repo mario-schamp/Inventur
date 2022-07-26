@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="InventurListeGM" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/InventurListeGM" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+		<ContentType ID="0x0100fa47b010d7c346a599ee6107407cc0b5" Name="ListFieldsContentType">
+			<FieldRefs>
+				<FieldRef ID="{94d56877-f257-417e-9578-236efc1f9a0b}" Name="Standort" />
+				<FieldRef ID="{7285462a-1c0e-4c65-968f-8b615c97eb09}" Name="Raumnummer" />
+				<FieldRef ID="{50d952bd-4dba-44e8-95ef-3d51f1ed6f9c}" Name="Stuhl3" />
+				<FieldRef ID="{6a487ae4-3dad-456d-81b0-3aee366f95d9}" Name="Stuhl4" />
+				<FieldRef ID="{173fd3fa-ab3f-447a-acdc-88eef1d2855f}" Name="Stuhl5" />
+				<FieldRef ID="{22aa75de-d499-4409-bcc0-af22604f14f7}" Name="Stuhl6" />
+				<FieldRef ID="{66dff7f2-6b51-4657-a53d-0e1a6cff802e}" Name="Stuhl7" />
+				<FieldRef ID="{9c3ee911-8282-4b98-bf73-5d490e579286}" Name="Einzeltisch3" />
+				<FieldRef ID="{61af6785-45fe-4081-be77-937537131ee6}" Name="Einzeltisch4" />
+				<FieldRef ID="{08597474-d94b-469d-ac27-2f5196cf8fc6}" Name="Einzeltisch5" />
+				<FieldRef ID="{d39c649b-7634-4758-af03-9f47d556a709}" Name="Einzeltisch6" />
+				<FieldRef ID="{a6f8cf4d-4e6a-470d-8e79-7abdeeda55fe}" Name="Einzeltisch7" />
+				<FieldRef ID="{aacbbf24-d900-4e31-af2d-96e5aeb1938a}" Name="Doppeltisch3" />
+				<FieldRef ID="{22aa541e-61f3-4be4-86af-d7746c778891}" Name="Doppeltisch4" />
+				<FieldRef ID="{6f505de9-d0bb-46e9-a2cd-62acf2b87e90}" Name="Doppeltisch5" />
+				<FieldRef ID="{5b809356-0bb5-4826-b29b-349f86e16cdb}" Name="Doppeltisch6" />
+				<FieldRef ID="{48f761fd-6847-402b-bf69-0e9428d861aa}" Name="Doppeltisch7" />
+			</FieldRefs>
+		</ContentType>
+		<ContentType ID="0x01007DBF64E6418A4B71B26C232E09AFF35E" Name="GebaeudeManagement" Group="GM Abteilung" Description="Inventar des Gebaeudemanagements" Inherits="TRUE" Version="0">
+				<FieldRefs>
+					<FieldRef ID="{94d56877-f257-417e-9578-236efc1f9a0b}" DisplayName="Standort" Required="TRUE" Name="Standort" />
+					<FieldRef ID="{7285462a-1c0e-4c65-968f-8b615c97eb09}" DisplayName="Raumnummer" Required="TRUE" Name="Raumnummer" />
+					<FieldRef ID="{50d952bd-4dba-44e8-95ef-3d51f1ed6f9c}" DisplayName="Stuhl Groeße 35" Required="FALSE" Name="Stuhl3" />
+					<FieldRef ID="{6a487ae4-3dad-456d-81b0-3aee366f95d9}" DisplayName="Stuhl Groeße 38" Required="FALSE" Name="Stuhl4" />
+					<FieldRef ID="{173fd3fa-ab3f-447a-acdc-88eef1d2855f}" DisplayName="Stuhl Groeße 43" Required="FALSE" Name="Stuhl5" />
+					<FieldRef ID="{22aa75de-d499-4409-bcc0-af22604f14f7}" DisplayName="Stuhl Groeße 46" Required="FALSE" Name="Stuhl6" />
+					<FieldRef ID="{66dff7f2-6b51-4657-a53d-0e1a6cff802e}" DisplayName="Stuhl Groeße 51" Required="FALSE" Name="Stuhl7" />
+					<FieldRef ID="{9c3ee911-8282-4b98-bf73-5d490e579286}" DisplayName="Einzeltisch Groeße 59" Required="FALSE" Name="Einzeltisch3" />
+					<FieldRef ID="{61af6785-45fe-4081-be77-937537131ee6}" DisplayName="Einzeltisch Groeße 64" Required="FALSE" Name="Einzeltisch4" />
+					<FieldRef ID="{08597474-d94b-469d-ac27-2f5196cf8fc6}" DisplayName="Einzeltisch Groeße 71" Required="FALSE" Name="Einzeltisch5" />
+					<FieldRef ID="{d39c649b-7634-4758-af03-9f47d556a709}" DisplayName="Einzeltisch Groeße 76" Required="FALSE" Name="Einzeltisch6" />
+					<FieldRef ID="{a6f8cf4d-4e6a-470d-8e79-7abdeeda55fe}" DisplayName="Einzeltisch Groeße 82" Required="FALSE" Name="Einzeltisch7" />
+					<FieldRef ID="{aacbbf24-d900-4e31-af2d-96e5aeb1938a}" DisplayName="Doppeltisch Groeße 59" Required="FALSE" Name="Doppeltisch3" />
+					<FieldRef ID="{22aa541e-61f3-4be4-86af-d7746c778891}" DisplayName="Doppeltisch Groeße 64" Required="FALSE" Name="Doppeltisch4" />
+					<FieldRef ID="{6f505de9-d0bb-46e9-a2cd-62acf2b87e90}" DisplayName="Doppeltisch Groeße 71" Required="FALSE" Name="Doppeltisch5" />
+					<FieldRef ID="{5b809356-0bb5-4826-b29b-349f86e16cdb}" DisplayName="Doppeltisch Groeße 76" Required="FALSE" Name="Doppeltisch6" />
+					<FieldRef ID="{48f761fd-6847-402b-bf69-0e9428d861aa}" DisplayName="Doppeltisch Groeße 82" Required="FALSE" Name="Doppeltisch7" />
+				</FieldRefs>
+	    </ContentType>
+	</ContentTypes>
+    <Fields>
+		<Field 
+			ID="{94d56877-f257-417e-9578-236efc1f9a0b}" 
+			Name="Standort" 
+			Title="Standort" 
+			DisplayName="Standort" 
+			Type="Choice" 
+			Group="IT Abteilung" 
+			Description="Wo befindet sich das Gerät" 
+			Required="TRUE">
+			<CHOICES>
+				<CHOICE>Nicht gesetzt</CHOICE>
+				<CHOICE>Verwaltung</CHOICE>
+				<CHOICE>Prenzlauer Berg</CHOICE>
+				<CHOICE>Hellersdorf</CHOICE>
+				<CHOICE>Spandau</CHOICE>
+			</CHOICES>
+			<MAPPINGS>
+				<MAPPING Value="1">Verwaltung</MAPPING>
+				<MAPPING Value="2">Prenzlauer Berg</MAPPING>
+				<MAPPING Value="3">Hellersdorf</MAPPING>
+				<MAPPING Value="4">Spandau</MAPPING>
+				<MAPPING Value="5">Nicht gesetzt</MAPPING>
+			</MAPPINGS>
+			<Default>Nicht gesetzt</Default>
+		</Field>
+		<Field 
+			ID="{7285462a-1c0e-4c65-968f-8b615c97eb09}" 
+			Name="Raumnummer" 
+			Title="Raumnummer" 
+			DisplayName="Raumnummer" 
+			Type="Text" 
+			Required="TRUE" 
+			Group="GM Abteilung" 
+			Description="Raum des Gebäudes" 
+			AllowDuplicateValues="TRUE">
+		</Field>
+		<Field 
+			ID="{50d952bd-4dba-44e8-95ef-3d51f1ed6f9c}" 
+			Name="Stuhl3" 
+			Title="Stuhl3" 
+			DisplayName="Stuhl 3" 
+			Type="Number" 
+			Required="FALSE" 
+			Group="GM Abteilung" 
+			Description="35cm Höhe">
+			<Default>0</Default>
+		</Field>
+		<Field 
+			ID="{6a487ae4-3dad-456d-81b0-3aee366f95d9}" 
+			Name="Stuhl4" 
+			Title="Stuhl4" 
+			DisplayName="Stuhl 4" 
+			Type="Number" 
+			Required="FALSE" 
+			Group="GM Abteilung" 
+			Description="38cm Höhe">
+			<Default>0</Default>
+		</Field>
+		<Field 
+			ID="{173fd3fa-ab3f-447a-acdc-88eef1d2855f}" 
+			Name="Stuhl5" 
+			Title="Stuhl5" 
+			DisplayName="Stuhl 5" 
+			Type="Number" 
+			Required="FALSE" 
+			Group="GM Abteilung" 
+			Description="43cm Höhe">
+			<Default>0</Default>
+		</Field>
+		<Field 
+			ID="{22aa75de-d499-4409-bcc0-af22604f14f7}" 
+			Name="Stuhl6" 
+			Title="Stuhl6" 
+			DisplayName="Stuhl 6" 
+			Type="Number" 
+			Required="FALSE" 
+			Group="GM Abteilung" 
+			Description="46cm Höhe">
+			<Default>0</Default>
+		</Field>
+		<Field 
+			ID="{66dff7f2-6b51-4657-a53d-0e1a6cff802e}" 
+			Name="Stuhl7" 
+			Title="Stuhl7" 
+			DisplayName="Stuhl 7" 
+			Type="Number" 
+			Required="FALSE" 
+			Group="GM Abteilung" 
+			Description="51cm Höhe">
+			<Default>0</Default>
+		</Field>
+		<Field 
+			ID="{9c3ee911-8282-4b98-bf73-5d490e579286}" 
+			Name="Einzeltisch3" 
+			Title="Einzeltisch3" 
+			DisplayName="Einzeltisch 3" 
+			Type="Number" 
+			Required="FALSE" 
+			Group="GM Abteilung" 
+			Description="59cm hoher Einzeltisch">
+			<Default>0</Default>
+		</Field>
+		<Field 
+			ID="{61af6785-45fe-4081-be77-937537131ee6}" 
+			Name="Einzeltisch4" 
+			Title="Einzeltisch4" 
+			DisplayName="Einzeltisch 4" 
+			Type="Number" 
+			Required="FALSE" 
+			Group="GM Abteilung" 
+			Description="64cm hoher Einzeltisch">
+			<Default>0</Default>
+		</Field>
+		<Field 
+			ID="{08597474-d94b-469d-ac27-2f5196cf8fc6}" 
+			Name="Einzeltisch5" 
+			Title="Einzeltisch5" 
+			DisplayName="Einzeltisch 5" 
+			Type="Number" 
+			Required="FALSE" 
+			Group="GM Abteilung" 
+			Description="71cm hoher Einzeltisch">
+			<Default>0</Default>
+		</Field>
+		<Field 
+			ID="{d39c649b-7634-4758-af03-9f47d556a709}" 
+			Name="Einzeltisch6" 
+			Title="Einzeltisch6" 
+			DisplayName="Einzeltisch 6" 
+			Type="Number" 
+			Required="FALSE" 
+			Group="GM Abteilung" 
+			Description="76cm hoher Einzeltisch">
+			<Default>0</Default>
+		</Field>
+		<Field 
+			ID="{a6f8cf4d-4e6a-470d-8e79-7abdeeda55fe}" 
+			Name="Einzeltisch7" 
+			Title="Einzeltisch7" 
+			DisplayName="Einzeltisch 7" 
+			Type="Number" 
+			Required="FALSE" 
+			Group="GM Abteilung" 
+			Description="82cm hoher Einzeltisch">
+			<Default>0</Default>
+		</Field>
+		<Field 
+			ID="{aacbbf24-d900-4e31-af2d-96e5aeb1938a}" 
+			Name="Doppeltisch3" 
+			Title="Doppeltisch3" 
+			DisplayName="Doppeltisch 3" 
+			Type="Number" 
+			Required="FALSE" 
+			Group="GM Abteilung" 
+			Description="59cm hoher Doppeltisch">
+			<Default>0</Default>
+		</Field>
+		<Field 
+			ID="{22aa541e-61f3-4be4-86af-d7746c778891}" 
+			Name="Doppeltisch4" 
+			Title="Doppeltisch4" 
+			DisplayName="Doppeltisch 4" 
+			Type="Number" 
+			Required="FALSE" 
+			Group="GM Abteilung" 
+			Description="64cm hoher Doppeltisch">
+			<Default>0</Default>
+		</Field>
+		<Field 
+			ID="{6f505de9-d0bb-46e9-a2cd-62acf2b87e90}" 
+			Name="Doppeltisch5" 
+			Title="Doppeltisch5" 
+			DisplayName="Doppeltisch 5" 
+			Type="Number" 
+			Required="FALSE" 
+			Group="GM Abteilung" 
+			Description="71cm hoher Doppeltisch">
+			<Default>0</Default>
+		</Field>
+		<Field 
+			ID="{5b809356-0bb5-4826-b29b-349f86e16cdb}" 
+			Name="Doppeltisch6" 
+			Title="Doppeltisch6" 
+			DisplayName="Doppeltisch 6" 
+			Type="Number" 
+			Required="FALSE" 
+			Group="GM Abteilung" 
+			Description="76cm hoher Doppeltisch">
+			<Default>0</Default>
+		</Field>
+		<Field 
+			ID="{48f761fd-6847-402b-bf69-0e9428d861aa}" 
+			Name="Doppeltisch7" 
+			Title="Doppeltisch7" 
+			DisplayName="Doppeltisch 7" 
+			Type="Number" 
+			Required="FALSE" 
+			Group="GM Abteilung" 
+			Description="82cm hoher Doppeltisch">
+			<Default>0</Default>
+		</Field>
+	</Fields>
+    <Views>
+		<View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+		<ViewFields>
+			<FieldRef ID="{94d56877-f257-417e-9578-236efc1f9a0b}" Name="Standort" />
+			<FieldRef ID="{7285462a-1c0e-4c65-968f-8b615c97eb09}" Name="Raumnummer" />
+			<FieldRef ID="{50d952bd-4dba-44e8-95ef-3d51f1ed6f9c}" Name="Stuhl3" />
+			<FieldRef ID="{6a487ae4-3dad-456d-81b0-3aee366f95d9}" Name="Stuhl4" />
+			<FieldRef ID="{173fd3fa-ab3f-447a-acdc-88eef1d2855f}" Name="Stuhl5" />
+			<FieldRef ID="{22aa75de-d499-4409-bcc0-af22604f14f7}" Name="Stuhl6" />
+			<FieldRef ID="{66dff7f2-6b51-4657-a53d-0e1a6cff802e}" Name="Stuhl7" />
+			<FieldRef ID="{9c3ee911-8282-4b98-bf73-5d490e579286}" Name="Einzeltisch3" />
+			<FieldRef ID="{61af6785-45fe-4081-be77-937537131ee6}" Name="Einzeltisch4" />
+			<FieldRef ID="{08597474-d94b-469d-ac27-2f5196cf8fc6}" Name="Einzeltisch5" />
+			<FieldRef ID="{d39c649b-7634-4758-af03-9f47d556a709}" Name="Einzeltisch6" />
+			<FieldRef ID="{a6f8cf4d-4e6a-470d-8e79-7abdeeda55fe}" Name="Einzeltisch7" />
+			<FieldRef ID="{aacbbf24-d900-4e31-af2d-96e5aeb1938a}" Name="Doppeltisch3" />
+			<FieldRef ID="{22aa541e-61f3-4be4-86af-d7746c778891}" Name="Doppeltisch4" />
+			<FieldRef ID="{6f505de9-d0bb-46e9-a2cd-62acf2b87e90}" Name="Doppeltisch5" />
+			<FieldRef ID="{5b809356-0bb5-4826-b29b-349f86e16cdb}" Name="Doppeltisch6" />
+			<FieldRef ID="{48f761fd-6847-402b-bf69-0e9428d861aa}" Name="Doppeltisch7" />
+		</ViewFields>
+        <Query>
+          <OrderBy>
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+		</View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+		<FieldRef Name="Standort" />
+			<FieldRef Name="Raumnummer" />
+			<FieldRef Name="Stuhl3" />
+			<FieldRef Name="Stuhl4" />
+			<FieldRef Name="Stuhl5" />
+			<FieldRef Name="Stuhl6" />
+			<FieldRef Name="Stuhl7" />
+			<FieldRef Name="Einzeltisch3" />
+			<FieldRef Name="Einzeltisch4" />
+			<FieldRef Name="Einzeltisch5" />
+			<FieldRef Name="Einzeltisch6" />
+			<FieldRef Name="Einzeltisch7" />
+			<FieldRef Name="Doppeltisch3" />
+			<FieldRef Name="Doppeltisch4" />
+			<FieldRef Name="Doppeltisch5" />
+			<FieldRef Name="Doppeltisch6" />
+			<FieldRef Name="Doppeltisch7" />
+		</ViewFields>
+        <Query>
+			
+		<!-- OrderBy = Sortiert die Tabelle aufsteigend nach 'FieldRef Name="WERT"' solange bis man händisch in der Tabelle nach einem Wert sortieren lässt -->
+		<OrderBy>
+			<FieldRef Name="Standort"></FieldRef>
+		</OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

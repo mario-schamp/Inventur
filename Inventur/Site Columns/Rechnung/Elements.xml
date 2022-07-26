@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{67b82a54-b214-402d-bfc0-01a530ece2b0}"
+       Name="Rechnung"
+	   Title="Rechnung"
+       DisplayName="Rechnung"
+       Type="Attachments"
+       Required="FALSE"
+       Group="IT Abteilung"
+	   Description="Rechnung zum Gerät">
+  </Field>
+</Elements>

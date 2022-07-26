@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{94d56877-f257-417e-9578-236efc1f9a0b}"
+       Name="Standort"
+	   Title="Standort"
+       DisplayName="Standort"
+       Type="Choice"
+       Group="IT Abteilung"
+	   Description="Wo befindet sich das Gerät">
+	  <CHOICES>
+		  <CHOICE>Nicht gesetzt</CHOICE>
+		  <CHOICE>Verwaltung</CHOICE>
+		  <CHOICE>Prenzlauer Berg</CHOICE>
+		  <CHOICE>Hellersdorf</CHOICE>
+		  <CHOICE>Spandau</CHOICE>
+	  </CHOICES>
+	  <MAPPINGS>
+		  <MAPPING Value="1">Verwaltung</MAPPING>
+		  <MAPPING Value="2">Prenzlauer Berg</MAPPING>
+		  <MAPPING Value="3">Hellersdorf</MAPPING>
+		  <MAPPING Value="4">Spandau</MAPPING>
+		  <MAPPING Value="5">Nicht gesetzt</MAPPING>
+	  </MAPPINGS>
+	  <Default>Nicht gesetzt</Default>
+  </Field>
+</Elements>

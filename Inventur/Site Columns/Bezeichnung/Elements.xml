@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{719c176f-4076-40a4-aa1b-bc5d2330b4d2}"
+       Name="Bezeichnung"
+	   Title="Bezeichnung"
+       DisplayName="Bezeichnung"
+       Type="Text"
+       Required="TRUE"
+       Group="IT Abteilung"
+	   Description="Interner Name des Geräts">
+  </Field>
+</Elements>

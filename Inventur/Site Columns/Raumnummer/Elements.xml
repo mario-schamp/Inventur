@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{7285462a-1c0e-4c65-968f-8b615c97eb09}"
+       Name="Raumnummer"
+	   Title="Raumnummer"
+       DisplayName="Raumnummer"
+       Type="Text"
+       Required="TRUE"
+       Group="GM Abteilung"
+	   Description="Raum des Gebäudes"
+	   AllowDuplicateValues="TRUE">
+  </Field>
+</Elements>

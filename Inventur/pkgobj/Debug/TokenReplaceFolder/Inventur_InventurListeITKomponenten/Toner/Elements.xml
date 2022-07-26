@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{edfa9a03-e93a-4841-ab40-727050b52100}"
+       Name="Toner"
+	   Title="Toner"
+       DisplayName="Toner"
+       Type="Choice"
+       Required="FALSE"
+       Group="IT Abteilung"
+	   JSLink="~site/scripts/rendering.js"
+	   Description="Welche Toner braucht das Gerät">
+		<CHOICES>
+			<CHOICE>Kein Toner</CHOICE>
+			<CHOICE>Toner 2</CHOICE>
+			<CHOICE>Toner 3</CHOICE>
+			<CHOICE>Toner 4</CHOICE>
+			<CHOICE>Toner 5</CHOICE>
+			<CHOICE>Toner 6</CHOICE>
+			<CHOICE>Toner 7</CHOICE>
+			<CHOICE>Toner 8</CHOICE>
+			<CHOICE>Toner 9</CHOICE>
+		</CHOICES>
+		<MAPPINGS>
+			<MAPPING Value="1">Kein Toner</MAPPING>
+			<MAPPING Value="2">Toner 2</MAPPING>
+			<MAPPING Value="3">Toner 3</MAPPING>
+			<MAPPING Value="4">Toner 4</MAPPING>
+			<MAPPING Value="5">Toner 5</MAPPING>
+			<MAPPING Value="6">Toner 6</MAPPING>
+			<MAPPING Value="7">Toner 7</MAPPING>
+			<MAPPING Value="8">Toner 8</MAPPING>
+			<MAPPING Value="9">Toner 9</MAPPING>
+		</MAPPINGS>
+		<Default>Kein Toner</Default>
+  </Field>
+</Elements>

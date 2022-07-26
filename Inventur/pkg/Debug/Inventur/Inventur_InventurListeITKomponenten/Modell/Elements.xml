@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{7714c294-138f-4a69-ba58-217c9d8a1f3d}"
+       Name="Modell"
+	   Title="Modell"
+       DisplayName="Modell"
+       Type="Text"
+       Required="FALSE"
+       Group="IT Abteilung"
+	   JSLink="~site/scripts/rendering.js"
+	   Description="Hersteller + Modelltyp">
+  </Field>
+</Elements>

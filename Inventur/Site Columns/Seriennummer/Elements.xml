@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{3707ef58-5838-4a08-bc7e-4312423b3f84}"
+       Name="Seriennummer"
+	   Title="Seriennummer"
+       DisplayName="Seriennummer"
+       Type="Text"
+       Required="FALSE"
+	   EnforceUniqueValues="FALSE"
+	   Indexed="TRUE"
+       Group="IT Abteilung"
+	   Description="Seriennummer des Geräts"
+	   JSLink="~site/scripts/rendering.js">
+	  <Default>Bitte Seriennummer angegeben</Default>
+  </Field>
+</Elements>

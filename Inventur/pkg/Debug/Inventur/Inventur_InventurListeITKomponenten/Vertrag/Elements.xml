@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{724ec975-4432-438e-9506-95f3a5a7ebb2}"
+       Name="Vertrag"
+	   Title="Vertrag"
+       DisplayName="Vertrag"
+       Type="Attachments"
+       Required="FALSE"
+       Group="IT Abteilung"
+	   Description="Leihvertrag"
+	   Sortable="FALSE">
+  </Field>
+</Elements>

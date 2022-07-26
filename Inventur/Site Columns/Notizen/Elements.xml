@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{9fa249b6-fbbd-4872-bce5-28a8b4537f26}"
+       Name="Notizen"
+	   Title="Notizen"
+       DisplayName="Notizen"
+       Type="Note"
+       Required="FALSE"
+	   ShowInEditForm="TRUE"
+       Group="IT Abteilung"
+	   Description="Notizen zum Gerät">
+  </Field>
+</Elements>

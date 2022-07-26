@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="a07c8273-b86e-48b4-a136-9dd94e74616b" Scope="Web" Title="Inventur Feature1" Version="1.0.0.1">
+  <ElementManifests>
+    <ElementManifest Location="InventurListeGM\Elements.xml" />
+    <ElementFile Location="InventurListeGM\Schema.xml" />
+    <ElementManifest Location="GMInventurListe\Elements.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="InventurListeGM\Elements.xml" />
+        <ElementManifest Location="GMInventurListe\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

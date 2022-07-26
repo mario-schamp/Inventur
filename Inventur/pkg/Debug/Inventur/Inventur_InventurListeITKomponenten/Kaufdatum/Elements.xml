@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{731b72c1-52f1-4623-98ce-78b553434b7f}"
+       Name="Kaufdatum"
+	   Title="Kaufdatum"
+       DisplayName="Kaufdatum"
+       Type="DateTime"
+       Required="FALSE"
+	   Format="DateOnly"
+       Group="IT Abteilung"
+	   Description="Wann wurde des Gerät gekauft?">
+  </Field>
+</Elements>

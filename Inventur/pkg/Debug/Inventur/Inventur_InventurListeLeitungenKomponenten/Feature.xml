@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="42492f88-8169-4dc8-82ad-febe79f498e3" Scope="Web" Title="Inventur Feature1" Version="1.0.0.1">
+  <ElementManifests>
+    <ElementManifest Location="ITLeitungen\Elements.xml" />
+    <ElementFile Location="ITLeitungen\Schema.xml" />
+    <ElementManifest Location="ITLeitungenInstance\Elements.xml" />
+    <ElementManifest Location="NeueLeitung\Elements.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="ITLeitungen\Elements.xml" />
+        <ElementManifest Location="ITLeitungenInstance\Elements.xml" />
+        <ElementManifest Location="NeueLeitung\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

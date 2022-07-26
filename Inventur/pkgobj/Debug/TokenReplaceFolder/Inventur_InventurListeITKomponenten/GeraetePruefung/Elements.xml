@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Field
+		 ID="{e097e3c9-3387-4361-9832-b2f81d6e358b}"
+		 Name="GeraetePruefung"
+		 Title="GeraetePruefung"
+		 DisplayName="Geräte Prüfung"
+		 Type="DateTime"
+		 Required="FALSE"
+		 Format="DateOnly"
+		 Group="IT Abteilung"
+		 Description="Wann steht die nächste Geräteprüfung an?">
+	</Field>
+</Elements>

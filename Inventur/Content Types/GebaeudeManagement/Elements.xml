@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Element (0x01) -->
+  <ContentType ID="0x01007DBF64E6418A4B71B26C232E09AFF35E" Name="GebaeudeManagement" Group="GM Abteilung" Description="Inventar des Gebaeudemanagements" Inherits="FALSE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{94d56877-f257-417e-9578-236efc1f9a0b}" DisplayName="Standort" Name="Standort" Description="Wo befindet sich das Gerät" Required="TRUE" />
+      <FieldRef ID="{7285462a-1c0e-4c65-968f-8b615c97eb09}" DisplayName="Raumnummer" Required="TRUE" Name="Raumnummer" Description="Raum des Gebäudes" />
+      <FieldRef ID="{50d952bd-4dba-44e8-95ef-3d51f1ed6f9c}" DisplayName="Stuhl 3" Required="FALSE" Description="35cm Höhe" Name="Stuhl3" />
+      <FieldRef ID="{6a487ae4-3dad-456d-81b0-3aee366f95d9}" DisplayName="Stuhl 4" Required="FALSE" Description="38cm Höhe" Name="Stuhl4" />
+      <FieldRef ID="{173fd3fa-ab3f-447a-acdc-88eef1d2855f}" DisplayName="Stuhl 5" Required="FALSE" Description="43cm Höhe" Name="Stuhl5" />
+      <FieldRef ID="{22aa75de-d499-4409-bcc0-af22604f14f7}" DisplayName="Stuhl 6" Required="FALSE" Description="46cm Höhe" Name="Stuhl6" />
+      <FieldRef ID="{66dff7f2-6b51-4657-a53d-0e1a6cff802e}" DisplayName="Stuhl 7" Required="FALSE" Description="51cm Höhe" Name="Stuhl7" />
+      <FieldRef ID="{9c3ee911-8282-4b98-bf73-5d490e579286}" DisplayName="Einzeltisch 3" Required="FALSE" Description="59cm hoher Einzeltisch" Name="Einzeltisch3" />
+      <FieldRef ID="{61af6785-45fe-4081-be77-937537131ee6}" DisplayName="Einzeltisch 4" Required="FALSE" Description="64cm hoher Einzeltisch" Name="Einzeltisch4" />
+      <FieldRef ID="{08597474-d94b-469d-ac27-2f5196cf8fc6}" DisplayName="Einzeltisch 5" Required="FALSE" Description="71cm hoher Einzeltisch" Name="Einzeltisch5" />
+      <FieldRef ID="{d39c649b-7634-4758-af03-9f47d556a709}" DisplayName="Einzeltisch 6" Required="FALSE" Description="76cm hoher Einzeltisch" Name="Einzeltisch6" />
+      <FieldRef ID="{a6f8cf4d-4e6a-470d-8e79-7abdeeda55fe}" DisplayName="Einzeltisch 7" Required="FALSE" Description="82cm hoher Einzeltisch" Name="Einzeltisch7" />
+      <FieldRef ID="{aacbbf24-d900-4e31-af2d-96e5aeb1938a}" DisplayName="Doppeltisch 3" Required="FALSE" Description="59cm hoher Doppeltisch" Name="Doppeltisch3" />
+      <FieldRef ID="{22aa541e-61f3-4be4-86af-d7746c778891}" DisplayName="Doppeltisch 4" Required="FALSE" Description="64cm hoher Doppeltisch" Name="Doppeltisch4" />
+      <FieldRef ID="{6f505de9-d0bb-46e9-a2cd-62acf2b87e90}" DisplayName="Doppeltisch 5" Required="FALSE" Description="71cm hoher Doppeltisch" Name="Doppeltisch5" />
+      <FieldRef ID="{5b809356-0bb5-4826-b29b-349f86e16cdb}" DisplayName="Doppeltisch 6" Required="FALSE" Description="76cm hoher Doppeltisch" Name="Doppeltisch6" />
+      <FieldRef ID="{48f761fd-6847-402b-bf69-0e9428d861aa}" DisplayName="Doppeltisch 7" Required="FALSE" Description="82cm hoher Doppeltisch" Name="Doppeltisch7" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

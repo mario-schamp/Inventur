@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{489e018b-9903-461c-a9de-ccfd0e02e33f}"
+       Name="Benutzer"
+	   Title="Benutzer"
+       DisplayName="Benutzer"
+       Type="UserMulti"
+	   Mult="TRUE"
+       Required="FALSE"
+	   UserSelectionMode="PeopleOnly"
+       Group="IT Abteilung">
+  </Field>
+</Elements>

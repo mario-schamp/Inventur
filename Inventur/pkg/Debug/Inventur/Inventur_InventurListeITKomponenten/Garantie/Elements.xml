@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{d33813fe-3745-48c9-a743-4a01cf8e2dd4}"
+       Name="Garantie"
+	   Title="Garantie"
+       DisplayName="Garantie"
+       Type="DateTime"
+       Required="FALSE"
+	   Format="DateOnly"
+       Group="IT Abteilung"
+	   Description="Bis wann ist die Garantie gültig?"
+	   JSLink="~site/scripts/rendering.js">
+  </Field>
+</Elements>

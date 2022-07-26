@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="InventurListeGM" 
+				OnQuickLaunch="TRUE" 
+				TemplateType="100" 
+				Url="Lists/InventurListeGM" 
+				Description="Inventur Liste des Gebäudemanagements des CCB" 
+				VersioningEnabled="TRUE">
+  </ListInstance>
+</Elements>

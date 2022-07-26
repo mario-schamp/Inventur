@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{6f505de9-d0bb-46e9-a2cd-62acf2b87e90}"
+       Name="Doppeltisch5"
+	   Title="Doppeltisch5"
+       DisplayName="Doppeltisch 5"
+       Type="Number"
+       Required="FALSE"
+       Group="GM Abteilung"
+	   Aggregation="sum"
+	   Sortable="FALSE"
+	   Description="71cm hoher Doppeltisch">
+	  <Default>0</Default>
+  </Field>
+</Elements>

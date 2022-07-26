@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="InventurListeIT" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/InventurListeIT" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE" DisableAttachments="FALSE">
+  <MetaData>
+    <ContentTypes>
+    	<ContentType ID="0x0100F45D0A2A3FDA45CEABB5AB7D5AD2995B" Name="NeuesGeraet" Group="IT Abteilung" Description="Geräte der IT Abteilung" Inherits="FALSE" Version="0">
+			<FieldRefs>
+				<FieldRef ID="{b2837cae-542a-4ffb-bf6b-f5f0375f6d0b}" DisplayName="Interne ID" Required="TRUE" Name="InterneID" />
+				<FieldRef ID="{719c176f-4076-40a4-aa1b-bc5d2330b4d2}" DisplayName="Bezeichnung" Required="TRUE" Name="Bezeichnung" />
+				<FieldRef ID="{489e018b-9903-461c-a9de-ccfd0e02e33f}" DisplayName="Benutzer" Required="FALSE" Name="Benutzer" />
+				<FieldRef ID="{94d56877-f257-417e-9578-236efc1f9a0b}" DisplayName="Standort" Required="FALSE" Name="Standort" />
+				<FieldRef ID="{962c1159-3a4f-49a4-b648-c486b438b92e}" DisplayName="Bilder" Required="FALSE" Name="Bilder" />
+				<FieldRef ID="{35877483-8fef-488e-8488-47b217081640}" DisplayName="DATEV" Required="FALSE" Name="DATEV" />
+				<FieldRef ID="{e097e3c9-3387-4361-9832-b2f81d6e358b}" DisplayName="Geräte Prüfung" Required="FALSE" Name="GeraetePruefung" Format="DateOnly" />
+				<FieldRef ID="{731b72c1-52f1-4623-98ce-78b553434b7f}" DisplayName="Kaufdatum" Required="FALSE" Name="Kaufdatum" Format="DateOnly" />
+				<FieldRef ID="{d33813fe-3745-48c9-a743-4a01cf8e2dd4}" DisplayName="Garantie" Required="FALSE" Name="Garantie" Format="DateOnly"/>
+				<FieldRef ID="{9fa249b6-fbbd-4872-bce5-28a8b4537f26}" DisplayName="Notizen" Required="FALSE" Name="Notizen" ShowInEditForm="TRUE" />
+				<FieldRef ID="{7714c294-138f-4a69-ba58-217c9d8a1f3d}" DisplayName="Modell" Required="FALSE" Name="Modell" />
+				<FieldRef ID="{67b82a54-b214-402d-bfc0-01a530ece2b0}" DisplayName="Rechnung" Required="FALSE" Name="Rechnung" />
+				<FieldRef ID="{3707ef58-5838-4a08-bc7e-4312423b3f84}" DisplayName="Seriennummer" Required="FALSE" Name="Seriennummer" />
+				<FieldRef ID="{edfa9a03-e93a-4841-ab40-727050b52100}" DisplayName="Toner" Required="FALSE" Name="Toner" />
+				<FieldRef ID="{754456b4-85b3-43ab-ac73-81df15740a11}" DisplayName="Versicherung" Required="FALSE" Name="Versicherung" />
+				<FieldRef ID="{724ec975-4432-438e-9506-95f3a5a7ebb2}" DisplayName="Vertrag" Required="FALSE" Name="Vertrag" />
+			</FieldRefs>
+		</ContentType>
+	</ContentTypes>
+    <Fields>
+		<Field 
+			ID="{b2837cae-542a-4ffb-bf6b-f5f0375f6d0b}" 
+			Name="InterneID" 
+			Title="InterneID" 
+			DisplayName="Interne ID" 
+			Type="Number" 
+			Required="TRUE" 
+			EnforceUniqueValues="TRUE" 
+			Indexed="TRUE"
+			Group="IT Abteilung"
+		    Description="ID Nummer zur identifikation">
+		</Field>
+		<Field 
+			ID="{719c176f-4076-40a4-aa1b-bc5d2330b4d2}" 
+			Name="Bezeichnung" 
+			Title="Bezeichnung" 
+			DisplayName="Bezeichnung" 
+			Type="Text" 
+			Required="TRUE" 
+			Group="IT Abteilung"
+			Description="Interner Name des Geräts">
+		</Field>
+		<Field 
+			ID="{489e018b-9903-461c-a9de-ccfd0e02e33f}" 
+			Name="Benutzer" 
+			Title="Benutzer" 
+			DisplayName="Benutzer" 
+			Type="UserMulti" 
+			Mult="TRUE"
+			Required="FALSE" 
+			UserSelectionMode="PeopleAndGroups" 
+			Group="IT Abteilung">
+		</Field>
+		<Field 
+			ID="{94d56877-f257-417e-9578-236efc1f9a0b}" 
+			Name="Standort" 
+			Title="Standort" 
+			DisplayName="Standort" 
+			Type="Choice" 
+			Required="FALSE" 
+			Group="IT Abteilung"
+			Description="Wo befindet sich das Gerät">
+				<CHOICES>
+					<CHOICE>Nicht gesetzt</CHOICE>
+					<CHOICE>Verwaltung</CHOICE>
+					<CHOICE>Prenzlauer Berg</CHOICE>
+					<CHOICE>Hellersdorf</CHOICE>
+					<CHOICE>Spandau</CHOICE>
+				</CHOICES>
+				<MAPPINGS>
+					<MAPPING Value="1">Verwaltung</MAPPING>
+					<MAPPING Value="2">Prenzlauer Berg</MAPPING>
+					<MAPPING Value="3">Hellersdorf</MAPPING>
+					<MAPPING Value="4">Spandau</MAPPING>
+					<MAPPING Value="5">Nicht gesetzt</MAPPING>
+				</MAPPINGS>
+				<Default>Nicht gesetzt</Default>
+		</Field>
+		<Field 
+			ID="{962c1159-3a4f-49a4-b648-c486b438b92e}" 
+			Name="Bilder" 
+			Title="Bilder" 
+			DisplayName="Bilder" 
+			Type="Image" 
+			Required="FALSE" 
+			Group="IT Abteilung">
+		</Field>
+		<Field 
+			ID="{35877483-8fef-488e-8488-47b217081640}" 
+			Name="DATEV" 
+			Title="DATEV" 
+			DisplayName="DATEV" 
+			Type="DateTime" 
+			Required="FALSE" 
+			Group="IT Abteilung"
+			Format="DateOnly"
+			Description="Ab wann kann das Gerät abgeschrieben werden?">
+		</Field>
+		<Field 
+			ID="{e097e3c9-3387-4361-9832-b2f81d6e358b}" 
+			Name="GeraetePruefung" 
+			Title="GeraetePruefung" 
+			DisplayName="Geräte Prüfung" 
+			Type="DateTime" 
+			Required="FALSE" 
+			Format="DateOnly" 
+			Group="IT Abteilung"
+			Description="Wann steht die nächste Geräteprüfung an?">
+		</Field>
+		<Field 
+			ID="{731b72c1-52f1-4623-98ce-78b553434b7f}" 
+			Name="Kaufdatum" 
+			Title="Kaufdatum" 
+			DisplayName="Kaufdatum" 
+			Type="DateTime" 
+			Required="FALSE" 
+			Format="DateOnly" 
+			Group="IT Abteilung"
+			Description="Wann wurde des Gerät gekauft?">
+		</Field>
+		<Field 
+			ID="{d33813fe-3745-48c9-a743-4a01cf8e2dd4}" 
+			Name="Garantie" 
+			Title="Garantie" 
+			DisplayName="Garantie" 
+			Type="DateTime" 
+			Required="FALSE" 
+			Format="DateOnly" 
+			Group="IT Abteilung"
+			Description="Bis wann ist die Garantie gültig?">
+		</Field>
+		<Field 
+			ID="{9fa249b6-fbbd-4872-bce5-28a8b4537f26}" 
+			Name="Notizen" 
+			Title="Notizen" 
+			DisplayName="Notizen" 
+			Type="Note" 
+			Required="FALSE" 
+			ShowInEditForm="TRUE" 
+			Group="IT Abteilung"
+			Description="Notizen zum Gerät">
+		</Field>
+		<Field 
+			ID="{7714c294-138f-4a69-ba58-217c9d8a1f3d}" 
+			Name="Modell" 
+			Title="Modell" 
+			DisplayName="Modell" 
+			Type="Text" 
+			Required="FALSE" 
+			Group="IT Abteilung"
+			Description="Hersteller + Modelltyp">
+		</Field>
+		<Field 
+			ID="{67b82a54-b214-402d-bfc0-01a530ece2b0}" 
+			Name="Rechnung" 
+			Title="Rechnung" 
+			DisplayName="Rechnung" 
+			Type="Text" 
+			Required="FALSE" 
+			Group="IT Abteilung"
+			Description="Rechnung zum Gerät">
+		</Field>
+		<Field 
+			ID="{3707ef58-5838-4a08-bc7e-4312423b3f84}" 
+			Name="Seriennummer" 
+			Title="Seriennummer" 
+			DisplayName="Seriennummer" 
+			Type="Text" 
+			Required="FALSE" 
+		    EnforceUniqueValues="TRUE"
+		    Indexed="TRUE"
+			Group="IT Abteilung"
+			Description="Seriennummer des Geräts">
+		</Field>
+		<Field 
+			ID="{edfa9a03-e93a-4841-ab40-727050b52100}" 
+			Name="Toner" 
+			Title="Toner" 
+			DisplayName="Toner" 
+			Type="Choice" 
+			Required="FALSE"
+			Group="IT Abteilung"
+			Description="Welche Toner braucht das Gerät">
+				<CHOICES>
+					<CHOICE>Kein Toner</CHOICE>
+					<CHOICE>Toner 2</CHOICE>
+					<CHOICE>Toner 3</CHOICE>
+					<CHOICE>Toner 4</CHOICE>
+					<CHOICE>Toner 5</CHOICE>
+					<CHOICE>Toner 6</CHOICE>
+					<CHOICE>Toner 7</CHOICE>
+					<CHOICE>Toner 8</CHOICE>
+					<CHOICE>Toner 9</CHOICE>
+				</CHOICES>
+				<MAPPINGS>
+					<MAPPING Value="1">Kein Toner</MAPPING>
+					<MAPPING Value="2">Toner 2</MAPPING>
+					<MAPPING Value="3">Toner 3</MAPPING>
+					<MAPPING Value="4">Toner 4</MAPPING>
+					<MAPPING Value="5">Toner 5</MAPPING>
+					<MAPPING Value="6">Toner 6</MAPPING>
+					<MAPPING Value="7">Toner 7</MAPPING>
+					<MAPPING Value="8">Toner 8</MAPPING>
+					<MAPPING Value="9">Toner 9</MAPPING>
+				</MAPPINGS>
+				<Default>Kein Toner</Default>
+		</Field>
+		<Field 
+			ID="{754456b4-85b3-43ab-ac73-81df15740a11}" 
+			Name="Versicherung" 
+			Title="Versicherung" 
+			DisplayName="Versicherung" 
+			Type="Text" 
+			Required="FALSE" 
+			Group="IT Abteilung"
+			Description="Unter welcher Versicherung läuft das Gerät?">
+			<Default>Keine vorhanden</Default>
+		</Field>
+		<Field 
+			ID="{724ec975-4432-438e-9506-95f3a5a7ebb2}" 
+			Name="Vertrag" 
+			Title="Vertrag" 
+			DisplayName="Vertrag" 
+			Type="Text" 
+			Required="FALSE" 
+			Group="IT Abteilung"
+			Description="Leihvertrag">
+		</Field>
+	</Fields>
+    <Views>
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+		<ViewFields>
+			<FieldRef Name="InterneID" ID="{b2837cae-542a-4ffb-bf6b-f5f0375f6d0b}" />
+			<FieldRef Name="Bezeichnung" ID="{719c176f-4076-40a4-aa1b-bc5d2330b4d2}" />
+			<FieldRef Name="Benutzer" ID="{489e018b-9903-461c-a9de-ccfd0e02e33f}" />
+			<FieldRef Name="Standort" ID="{94d56877-f257-417e-9578-236efc1f9a0b}" />
+			<FieldRef Name="Bilder" ID="{962c1159-3a4f-49a4-b648-c486b438b92e}" />
+			<FieldRef Name="DATEV" ID="{35877483-8fef-488e-8488-47b217081640}" />
+			<FieldRef Name="GeraetePruefung" ID="{e097e3c9-3387-4361-9832-b2f81d6e358b}" />
+			<FieldRef Name="Kaufdatum" ID="{731b72c1-52f1-4623-98ce-78b553434b7f}" />
+			<FieldRef Name="Garantie" ID="{d33813fe-3745-48c9-a743-4a01cf8e2dd4}" />
+			<FieldRef Name="Notizen" ID="{9fa249b6-fbbd-4872-bce5-28a8b4537f26}" />
+			<FieldRef Name="Modell" ID="{7714c294-138f-4a69-ba58-217c9d8a1f3d}" />
+			<FieldRef Name="Rechnung" ID="{67b82a54-b214-402d-bfc0-01a530ece2b0}" />
+			<FieldRef Name="Seriennummer" ID="{3707ef58-5838-4a08-bc7e-4312423b3f84}" />
+			<FieldRef Name="Toner" ID="{edfa9a03-e93a-4841-ab40-727050b52100}" />
+			<FieldRef Name="Versicherung" ID="{754456b4-85b3-43ab-ac73-81df15740a11}" />
+			<FieldRef Name="Vertrag" ID="{724ec975-4432-438e-9506-95f3a5a7ebb2}" />
+		</ViewFields>
+		<Query>
+          <OrderBy>
+			<FieldRef Name="InterneID" Ascending="TRUE"></FieldRef>
+		  </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+		  <ViewFields>
+			  <FieldRef Name="InterneID" ID="{b2837cae-542a-4ffb-bf6b-f5f0375f6d0b}" />
+			  <FieldRef Name="Bezeichnung" ID="{719c176f-4076-40a4-aa1b-bc5d2330b4d2}" />
+		      <FieldRef Name="Benutzer" ID="{489e018b-9903-461c-a9de-ccfd0e02e33f}" />
+			  <FieldRef Name="Standort" ID="{94d56877-f257-417e-9578-236efc1f9a0b}" />
+			  <FieldRef Name="Bilder" ID="{962c1159-3a4f-49a4-b648-c486b438b92e}" />
+			  <FieldRef Name="DATEV" ID="{35877483-8fef-488e-8488-47b217081640}" />
+			  <FieldRef Name="GeraetePruefung" ID="{e097e3c9-3387-4361-9832-b2f81d6e358b}" />
+			  <FieldRef Name="Kaufdatum" ID="{731b72c1-52f1-4623-98ce-78b553434b7f}" />
+			  <FieldRef Name="Garantie" ID="{d33813fe-3745-48c9-a743-4a01cf8e2dd4}" />
+			  <FieldRef Name="Notizen" ID="{9fa249b6-fbbd-4872-bce5-28a8b4537f26}" />
+			  <FieldRef Name="Modell" ID="{7714c294-138f-4a69-ba58-217c9d8a1f3d}" />
+			  <FieldRef Name="Rechnung" ID="{67b82a54-b214-402d-bfc0-01a530ece2b0}" />
+			  <FieldRef Name="Seriennummer" ID="{3707ef58-5838-4a08-bc7e-4312423b3f84}" />
+			  <FieldRef Name="Toner" ID="{edfa9a03-e93a-4841-ab40-727050b52100}" />
+			  <FieldRef Name="Versicherung" ID="{754456b4-85b3-43ab-ac73-81df15740a11}" />
+			  <FieldRef Name="Vertrag" ID="{724ec975-4432-438e-9506-95f3a5a7ebb2}" />
+		  </ViewFields>
+        <Query>
+          <OrderBy>
+			 <FieldRef Name="InterneID"></FieldRef>
+		  </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>
